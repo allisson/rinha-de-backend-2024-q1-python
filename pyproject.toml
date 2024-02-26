@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "rinha-2024-q1"
+version = "0.1.0"
+description = ""
+authors = ["Allisson Azevedo"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+pydantic = "^2.6.1"
+pydantic-settings = "^2.2.1"
+psycopg = {extras = ["c"], version = "^3.1.18"}
+orjson = "^3.9.15"
+psycopg-pool = "^3.2.1"
+fastwsgi = "^0.0.9"
+setuptools = "^69.1.1"
+
+[tool.poetry.group.dev.dependencies]
+pre-commit = "^3.6.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
